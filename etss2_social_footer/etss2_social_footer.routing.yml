@@ -1,0 +1,17 @@
+etss2_social_footer.admin_form:
+  path: "/admin/config/system/social-footer"
+  defaults:
+    _form: 'Drupal\etss2_social_footer\Form\SocialFooterForm'
+    _title: "Social Icons Footer"
+  requirements:
+    _permission: "administer social icons"
+  options:
+    _admin_route: TRUE
+
+etss2_social_footer.api:
+  path: "/api/etss2_social_footer"
+  defaults:
+    _controller: 'Drupal\etss2_social_footer\Controller\SocialFooterJsonController::getSocialFooter'
+    _title: "Social Footer Icons Details API"
+  requirements:
+    _permission: "access content"

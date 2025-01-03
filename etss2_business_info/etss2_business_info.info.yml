@@ -1,0 +1,7 @@
+name: "ETSS2 Business Info"
+type: module
+description: "Provides a configuration entity for managing business information, exposed via JSON API for decoupled frontends."
+package: Configuration
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:jsonapi

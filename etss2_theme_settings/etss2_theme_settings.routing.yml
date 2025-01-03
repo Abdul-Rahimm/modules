@@ -1,0 +1,15 @@
+etss2_theme_settings.form:
+  path: '/admin/config/system/etss2-theme-settings'
+  defaults:
+    _form: 'Drupal\etss2_theme_settings\Form\ThemeSettingsForm'
+    _title: 'ETSS2 Theme Settings'
+  requirements:
+    _permission: 'administer site configuration'
+
+etss2_theme_settings.json:
+  path: '/api/etss2-theme-settings'
+  defaults:
+    _controller: '\Drupal\etss2_theme_settings\Controller\ThemeSettingsJsonController::getThemeSettings'
+    _title: 'ETSS2 Theme Settings API'
+  requirements:
+    _permission: 'access content'

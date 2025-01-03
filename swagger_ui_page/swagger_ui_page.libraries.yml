@@ -1,0 +1,12 @@
+swagger_ui:
+  remote: {}
+  version: 3.52.0
+  js:
+    https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/3.52.0/swagger-ui-bundle.js: { type: external, minified: true }
+    https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/3.52.0/swagger-ui-standalone-preset.js: { type: external, minified: true }
+  css:
+    https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/3.52.0/swagger-ui.css: { type: external, minified: true }
+  dependencies:
+    - core/drupalSettings
+    - core/jquery
+    - core/drupal

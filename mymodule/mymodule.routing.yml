@@ -1,0 +1,17 @@
+mymodule.admin_form:
+  path: "/admin/config/system/mymodule"
+  defaults:
+    _form: 'Drupal\mymodule\Form\mymoduleForm'
+    _title: "mymodule"
+  requirements:
+    _permission: "administer social icons"
+  options:
+    _admin_route: TRUE
+
+mymodule.api:
+  path: "/api/mymodule"
+  defaults:
+    _controller: 'Drupal\mymodule\Controller\mymoduleJsonController::getmymodule'
+    _title: "mymodule Details API"
+  requirements:
+    _permission: "access content"

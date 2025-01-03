@@ -1,0 +1,6 @@
+etss2_theme_settings.custom_js_library:
+  version: 1.0
+  js:
+    js/custom.js: {}
+  dependencies:
+    - core/jquery

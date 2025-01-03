@@ -1,0 +1,9 @@
+name: "ETSS2 Footer Disclaimer"
+type: module
+description: "Module for managing the footer disclaimer, including dynamic content and analytics tracking."
+core_version_requirement: ^10 || ^11
+package: Custom
+dependencies:
+  - drupal:config
+  - drupal:system
+  - etss2_business_info

@@ -1,0 +1,8 @@
+business_info_form:
+  version: 1.x
+  js:
+    js/business_info_form.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings

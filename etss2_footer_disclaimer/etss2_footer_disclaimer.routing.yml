@@ -1,0 +1,42 @@
+# Admin route to display the footer disclaimer form in Drupal admin.
+etss2_footer_disclaimer.admin_form:
+  path: "/admin/config/system/footer-disclaimer"
+  defaults:
+    _form: 'Drupal\etss2_footer_disclaimer\Form\FooterDisclaimerForm'
+    _title: "Footer Disclaimer"
+  requirements:
+    _permission: "administer footer disclaimer"
+  options:
+    _admin_route: TRUE
+
+etss2_footer_disclaimer.api:
+  path: "/api/etss2_footer_disclaimer"
+  defaults:
+    _controller: 'Drupal\etss2_footer_disclaimer\Controller\FooterDisclaimerJsonController::getFooterDisclaimer'
+    _title: "Footer Disclaimer Details API"
+  requirements:
+    _permission: "access content"
+# # JSON API route to expose the footer disclaimer configuration entity (collection).
+# jsonapi.etss2_footer_disclaimer--footer_disclaimer.collection:
+#   path: '/jsonapi/config/footer_disclaimer/footer_disclaimer'
+#   defaults:
+#     _controller: 'Drupal\jsonapi\Controller\EntityResource::collection'
+#     _jsonapi_resource: 'config--footer_disclaimer--footer_disclaimer'
+#   requirements:
+#     _access_jsonapi_get: 'TRUE'
+#   options:
+#     _format: 'api_json'
+#     _auth: ['basic_auth', 'cookie']
+
+# # JSON API route to expose a single footer disclaimer configuration entity (individual).
+# jsonapi.etss2_footer_disclaimer--footer_disclaimer.individual:
+#   path: '/jsonapi/config/footer_disclaimer/footer_disclaimer/{entity}'
+#   defaults:
+#     _controller: 'Drupal\jsonapi\Controller\EntityResource::individual'
+#     _jsonapi_resource: 'config--footer_disclaimer--footer_disclaimer'
+#   requirements:
+#     _entity_access: 'footer_disclaimer.view'
+#     _access_jsonapi_get: 'TRUE'
+#   options:
+#     _format: 'api_json'
+#     _auth: ['basic_auth', 'cookie']

@@ -1,0 +1,7 @@
+name: 'ETSS2 Theme Settings'
+type: module
+description: 'Provides a configuration entity for managing theme settings exposed via JSON API.'
+package: Configuration
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:jsonapi

@@ -1,0 +1,15 @@
+etss2_business_info.collection:
+  path: "/admin/config/system/etss2-business-info"
+  defaults:
+    _form: 'Drupal\etss2_business_info\Form\BusinessInfoForm'
+    _title: "Business Information"
+  requirements:
+    _permission: "administer site configuration"
+
+etss2_business_info.api:
+  path: "/api/etss2-business-info"
+  defaults:
+    _controller: 'Drupal\etss2_business_info\Controller\BusinessInfoJsonController::getBusinessInfo'
+    _title: "Business Details API"
+  requirements:
+    _permission: "access content"

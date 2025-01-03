@@ -1,0 +1,7 @@
+etss2_business_info.admin:
+  title: 'Business Information'
+  description: 'Manage business information for ETSS2.'
+  parent: system.admin_config_system
+  route_name: etss2_business_info.collection
+  weight: 200
+  menu_name: admin
